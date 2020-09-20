@@ -2,31 +2,7 @@
 
 * Студент: [Дмитрий Петров](https://up.htmlacademy.ru/htmlcss/29/user/1588693).
 * Наставник: [Кирилл Петров](https://htmlacademy.ru/profile/frozik).
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</title>
-</head>
-	<body>
-		<header>
-			<nav>
-				<a>
-				<img src="img/index-logo.svg" width="138" height="70" alt="CITY OF SEDONA">
-				</a>
-				<ul>
-				<li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
-				<li><a href="blank.html">ФОТО И ВИДЕО</a></li>
-				<li><a href="price.html">КАРТА ШТАТА</a></li>
-				<li><a href="catalog.html">ГОСТИНИЦЫ</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-		<img src="image.png" width="1200" height="509" alt="Because the Grand Canyon sucrs!">
-		</main>
-	</body>
-</html>
+
 
 ---
 
