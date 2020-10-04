@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="" width="138" height="70" alt="эмблема Седоны">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="blank.html">ФОТО И ВИДЕО</a></li>
           <li><a href="blank.html">КАРТА ШТАТА</a></li>
@@ -18,69 +21,75 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <main class="hotels-container">
+    <section class="filters">
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <legend>инфраструктура:</legend>
-          <input type="checkbox" name="swimming_pool" id="swimming_pool" checked>
+          <input class="button button-attribute" type="checkbox" name="swimming_pool" id="swimming_pool" checked>
           <label for="swimming_pool">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking">
+          <input class="button button-attribute" type="checkbox" name="parking" id="parking">
           <label for="parking">Парковка</label>
-          <input type="checkbox" name="wi_fi" id="wi_fi">
+          <input class="button button-attribute" type="checkbox" name="wi_fi" id="wi_fi">
           <label for="wi_fi">Wi-Fi</label>
         </fieldset>
         <fieldset>
           <legend>тип жилья:</legend>
-          <input type="checkbox" name="hotel" id="hotel" checked>
+          <input class="button button-attribute" type="checkbox" name="hotel" id="hotel" checked>
           <label for="hotel">Гостиница</label>
-          <input type="checkbox" name="motel" id="motel" checked>
+          <input class="button button-attribute" type="checkbox" name="motel" id="motel" checked>
           <label for="motel">Мотель</label>
-          <input type="checkbox" name="apartments" id="apartments" checked>
+          <input class="button button-attribute" type="checkbox" name="apartments" id="apartments" checked>
           <label for="apartments">Апартаменты</label>
         </fieldset>
         <label for="cost_per_day">Стоимость в сутки (Р):</label>
         от 0 <input type="range" id="cost_per_day" name="cost_per_day" min="0" max="3000" step="1000"> до 3000
-        <button type="submit">Показать</button>
+        <button class="button button-demonstrate" type="submit">Показать</button>
       </form>
     </section>
     <h2>Сортировка:</h2>
     <ul>
-      <li><a href="#">По цене</a></li>
-      <li><a href="#">По типу</a></li>
-      <li><a href="#">По рейтингу</a></li>
+      <li><a class="button" href="#">По цене</a></li>
+      <li><a class="button" href="#">По типу</a></li>
+      <li><a class="button" href="#">По рейтингу</a></li>
     </ul>
     <h2>Найдено: 3</h2>
     <article>
       <img src="" width="135" height="90" alt="Гостиница">
-      <h3><a href="https://echo.htmlacademy.ru/">Amara Resort & Spa</a></h3>
+      <h3><a class="button" href="https://echo.htmlacademy.ru/">Amara Resort & Spa</a></h3>
       <p>Гостиница</p>
       <p>От 4000 Р.</p>
-      <a href="#">Подробнее"</a>
-      <a href="#">Забронировать"</a>
+      <a class="button button-detail" href="#">Подробнее"</a>
+      <a class="button button-book" href="#">Забронировать"</a>
     </article>
     <article>
       <img src="" width="135" height="90" alt="Мотель">
-      <h3><a href="https://echo.htmlacademy.ru/">Desert Quail Inn</a></h3>
+      <h3><a class="button" href="https://echo.htmlacademy.ru/">Desert Quail Inn</a></h3>
       <p>Мотель</p>
       <p>От 3000 Р.</p>
-      <a href="#">Подробнее"</a>
-      <a href="#">Забронировать"</a>
+      <a class="button button-detail" href="#">Подробнее"</a>
+      <a class="button button-book" href="#">Забронировать"</a>
     </article>
     <article>
-      <img src="" width="135" height="90" alt="Мотель">
-      <h3><a href="https://echo.htmlacademy.ru/">Villas at Poco Diablo</a></h3>
+      <img src="" width="135" height="90" alt="Апартаменты">
+      <h3><a class="button" href="https://echo.htmlacademy.ru/">Villas at Poco Diablo</a></h3>
       <p>Апартаменты</p>
       <p>От 2000 Р.</p>
-      <a href="#">Подробнее"</a>
-      <a href="#">Забронировать"</a>
+      <a class="button button-detail" href="#">Подробнее"</a>
+      <a class="button button-book" href="#">Забронировать"</a>
     </article>
-    <footer>
-      <a href="#">#VISITSEDONA</a>
-      <a href="tel:+74956660166">тел.:+7(495)666-01-66</a>
-      <a href="#">Вконтакте</a>
-      <a href="#">Фейсбук</a>
-      <a href="#">Инстаграм</a>
-      website by HTML academy
+    </main>
+    <footer class="main-footer">
+      <div class="footer-contacts">
+        <a href="#">#VISITSEDONA</a>
+        <a href="tel:+74956660166">тел.:+7(495)666-01-66</a>
+      </div>
+      <div class="footer-social">
+        <a class="social-button" href="#">Вконтакте</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Инстаграм</a>
+      </div>
+      <a class="button"> website by HTML academy</a>
     </footer>
   </body>
 </html>
