@@ -95,15 +95,17 @@
     <div class="search-hotel">
       <h2 class="search-hotel-title">поиск гостиницы в Седоне</h2>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <label for="date_of_arrival">Дата заезда</label>
-        <input class="date-arrival" type="date" id="date_of_arrival" name="date_of_arrival">
-        <label for="date_of_departure">Дата выезда</label>
-        <input class="date-departure" type="date" id="date_of_departure" name="date_of_departure">
+        <div class="map-img">
+        <label for="date-of-arrival">Дата заезда</label>
+        <input class="date-arrival" type="date" id="date-of-arrival" name="date-of-arrival">
+        <label for="date-of-departure">Дата выезда</label>
+        <input class="date-departure" type="date" id="date-of-departure" name="date-of-departure">
         <label for="grownup">Взрослые</label>
         <input class="number-grownup" type="number" min="2" max="5" step="1" id="grownup" name="grownup">
         <label for="childrens">Дети</label>
         <input class="number-childrens" type="number" min="0" max="5" step="1" id="childrens" name="childrens">
         <button class="button search-button" type="submit">Найти</button>
+        </div>
       </form>
     </div>
   </section>
