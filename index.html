@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>город Седона</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page-body">
 <header class="main-header">
@@ -88,14 +88,13 @@
     </div>
   </section>
   <section class="search">
-    <div class="search-list">
-      <a class="search-list-head">Заинтересовались?</a>
+    <div class="search-interested">
+      <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </div>
     <div class="search-hotel">
-      <h2 class="search-hotel-title">поиск гостиницы в Седоне</h2>
+      <a href="#" class="search-hotel-title">поиск гостиницы в Седоне</a>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="map-img">
         <label for="date-of-arrival">Дата заезда</label>
         <input class="date-arrival" type="date" id="date-of-arrival" name="date-of-arrival">
         <label for="date-of-departure">Дата выезда</label>
@@ -105,7 +104,6 @@
         <label for="childrens">Дети</label>
         <input class="number-childrens" type="number" min="0" max="5" step="1" id="childrens" name="childrens">
         <button class="button search-button" type="submit">Найти</button>
-        </div>
       </form>
     </div>
   </section>

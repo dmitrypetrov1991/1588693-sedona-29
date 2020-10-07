@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -24,7 +24,7 @@
     <main class="hotels-container">
     <section class="filters">
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset>
+        <fieldset class="type-filter">
           <legend>инфраструктура:</legend>
           <input class="button button-attribute" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
           <label for="swimming-pool">Бассейн</label>
@@ -33,7 +33,7 @@
           <input class="button button-attribute" type="checkbox" name="wi-fi" id="wi-fi">
           <label for="wi-fi">Wi-Fi</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-filter">
           <legend>тип жилья:</legend>
           <input class="button button-attribute" type="checkbox" name="hotel" id="hotel" checked>
           <label for="hotel">Гостиница</label>
@@ -47,34 +47,42 @@
         <button class="button button-demonstrate" type="submit">Показать</button>
       </form>
     </section>
+      <div class="sorting">
     <h2>Сортировка:</h2>
-    <ul>
-      <li><a class="button" href="#">По цене</a></li>
-      <li><a class="button" href="#">По типу</a></li>
-      <li><a class="button" href="#">По рейтингу</a></li>
+    <ul class="sorting-filter">
+      <li><a class="button button-price" href="#">По цене</a></li>
+      <li><a class="button button-type" href="#">По типу</a></li>
+      <li><a class="button button-rating" href="#">По рейтингу</a></li>
     </ul>
     <h2>Найдено: 3</h2>
-    <article>
+      </div>
+    <article class="search-results">
       <img src="" width="135" height="90" alt="Гостиница">
-      <h3><a class="button" href="https://echo.htmlacademy.ru/">Amara Resort & Spa</a></h3>
+      <h3><a class="name-hotel" href="https://echo.htmlacademy.ru/">Amara Resort & Spa</a></h3>
+      <div class="characters">
       <p>Гостиница</p>
       <p>От 4000 Р.</p>
+      </div>
       <a class="button button-detail" href="#">Подробнее"</a>
       <a class="button button-book" href="#">Забронировать"</a>
     </article>
-    <article>
+    <article class="search-results">
       <img src="" width="135" height="90" alt="Мотель">
-      <h3><a class="button" href="https://echo.htmlacademy.ru/">Desert Quail Inn</a></h3>
+      <h3><a class="name-hotel" href="https://echo.htmlacademy.ru/">Desert Quail Inn</a></h3>
+      <div class="characters">
       <p>Мотель</p>
       <p>От 3000 Р.</p>
+      </div>
       <a class="button button-detail" href="#">Подробнее"</a>
       <a class="button button-book" href="#">Забронировать"</a>
     </article>
-    <article>
+    <article class="search-results">
       <img src="" width="135" height="90" alt="Апартаменты">
-      <h3><a class="button" href="https://echo.htmlacademy.ru/">Villas at Poco Diablo</a></h3>
+      <h3><a class="name-hotel" href="https://echo.htmlacademy.ru/">Villas at Poco Diablo</a></h3>
+      <div class="characters">
       <p>Апартаменты</p>
       <p>От 2000 Р.</p>
+      </div>
       <a class="button button-detail" href="#">Подробнее"</a>
       <a class="button button-book" href="#">Забронировать"</a>
     </article>

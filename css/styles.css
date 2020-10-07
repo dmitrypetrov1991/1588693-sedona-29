@@ -5,11 +5,9 @@
   --light-gray: rgba(242, 242, 242, 1);
   --gray: rgba(238, 238, 238, 1);
   --gray-light-regular: rgba(235, 235, 235, 1);
-  --gray-regular: #888888;
   --gray-dark: rgba(102, 102, 102, 1);
   --black-lighter: rgba(51, 51, 51, 1);
   --black: rgba(0, 0, 0, 1);
-  --black-regular: #000000;
   --blue-light: rgba(129, 179, 210, 1);
   --blue: rgba(102, 158, 192, 1);
   --blue-dark: rgba(84, 150, 189, 1);
@@ -24,13 +22,13 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: " PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: var(--black);
   text-transform: uppercase;
-  background-color: var(--gray-regular);
+  background-color: var(--gray);
 }
 
 a {
@@ -50,9 +48,12 @@ img {
 }
 .site-navigation a {
   color: var(--black);
+  font-weight: 700;
 }
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* title-features */
@@ -65,6 +66,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
+  padding: 0;
 }
 
 /*first-feature*/
@@ -78,6 +80,7 @@ img {
 .first-feature h2 {
   font-size: 21px;
   line-height: 21px;
+  padding: 0;
 }
 
 /*other-features*/
@@ -90,11 +93,14 @@ img {
 }
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .features-list h2 {
   color: var(--black);
   font-size: 21px;
   line-height: 21px;
+  padding: 0;
 }
 
 /*second-feature*/
@@ -108,6 +114,7 @@ img {
 .second-feature h2 {
   font-size: 21px;
   line-height: 21px;
+  padding: 0;
 }
 
 /*another-features*/
@@ -122,23 +129,27 @@ img {
   color: var(--black);
   font-size: 21px;
   line-height: 21px;
+  padding: 0;
 }
 .another-features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/*search-list*/
+/*search-interested*/
 
-.search-list {
+.search {
   background-color: var(--white);
   color: var(--black-lighter);
   font-size: 14px;
   line-height: 24px;
 }
-.search-list-head {
+.search-interested h2 {
   color: var(--black);
   font-size: 30px;
   line-height: 24px;
+  padding: 0;
 }
 
 /*search-hotel*/
@@ -155,11 +166,31 @@ img {
   background-color: var(--brown-light);
   color: var(--white);
 }
+.search-hotel-title:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+.search-hotel-title:focus {
+  background-color: var(--brown-dark);
+  color: var(--white);
+}
 .date_of_arrival,
 .date_of_departure,
 .number-grownup,
 .number-childrens {
   background-color: var(--light-gray);
+}
+.search-button {
+  background-color: var(--blue-light);
+  color: var(--white);
+}
+.search-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.search-button:focus {
+  background-color: var(--blue-dark);
+  color: var(--white);
 }
 
 /*main-footer*/
@@ -182,3 +213,80 @@ img {
 
 /*page hotels*/
 
+ /*  .filters {
+  вставил из критерия. не знаю как прописать фоновое изображение пока
+  background: var(--blue) url("../img/background-body.jpg") no-repeat center
+}*/
+.type-filter {
+  color: var(--white);
+}
+.button-attribute,
+.button-demonstrate {
+  background-color: transparent;
+  color: var(--white);
+}
+.button-demonstrate:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+.sorting {
+  background-color: var(--white);
+}
+.sorting h2 {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 26px;
+  padding: 0;
+
+}
+.sorting-filter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--white);
+}
+.sorting a {
+  color: var(--black);
+  font-weight: 700;
+
+}
+.button-price {
+  color: var(--blue-light);
+}
+.search-results {
+  background-color: var(--white);
+}
+.name-hotel {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 26px;
+}
+.button-detail {
+  background-color: var(--blue-light);
+  color: var(--white);
+}
+.button-detail:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.button-detail:focus {
+  background-color: var(--blue-dark);
+  color: var(--white);
+}
+.button-book {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--brown-light);
+  color: var(--white);
+}
+.button-book:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+.button-book:focus {
+  background-color: var(--brown-dark);
+  color: var(--white);
+}
