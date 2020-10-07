@@ -251,15 +251,50 @@ img {
 .sorting a {
   color: var(--black);
   font-weight: 700;
-
 }
-.button-price {
+.sorting-filter .button-price {
   color: var(--blue-light);
+}
+.sorting-filter .button-type {
+  text-decoration: underline;
+  color: var(--black);
+  opacity: 30%
+}
+.sorting-filter .button-type:hover {
+  text-decoration: underline;
+  color: var(--blue-light);
+}
+.sorting-filter .button-type:focus {
+  color: var(--black);
+  text-decoration: none;
+}
+.sorting-filter .button-rating {
+  text-decoration: underline;
+  color: var(--black);
+  opacity: 30%
+}
+.sorting-filter .button-rating:hover {
+  text-decoration: underline;
+  color: var(--blue-light);
+}
+.sorting-filter .button-rating:focus {
+  color: var(--black);
+  text-decoration: none;
 }
 .search-results {
   background-color: var(--white);
 }
 .name-hotel {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 26px;
+}
+.name-hotel:hover {
+  color: var(--blue-light);
+  font-size: 21px;
+  line-height: 26px;
+}
+.name-hotel:focus {
   color: var(--black);
   font-size: 21px;
   line-height: 26px;
