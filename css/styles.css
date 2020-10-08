@@ -46,10 +46,12 @@ img {
   color: var(--black);
   background-color: var(--white);
 }
+
 .site-navigation a {
   color: var(--black);
   font-weight: 700;
 }
+
 .site-navigation {
   list-style: none;
   margin: 0;
@@ -62,11 +64,12 @@ img {
   background-color: var(--white);
   color: var(--black-lighter);
 }
-.title-features h1{
+
+.title-features h1 {
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
-  padding: 0;
+  margin: 0;
 }
 
 /*first-feature*/
@@ -77,10 +80,12 @@ img {
   background-color: var(--blue-light);
   color: var(--white);
 }
+
 .first-feature h2 {
+  color: var(--white);
   font-size: 21px;
   line-height: 21px;
-  padding: 0;
+  margin: 0;
 }
 
 /*other-features*/
@@ -91,50 +96,22 @@ img {
   font-size: 14px;
   line-height: 21px;
 }
+
 .features-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .features-list h2 {
   color: var(--black);
   font-size: 21px;
   line-height: 21px;
-  padding: 0;
-}
-
-/*second-feature*/
-
-.second-feature {
-  font-size: 14px;
-  line-height: 21px;
-  background-color: var(--blue-light);
-  color: var(--white);
-}
-.second-feature h2 {
-  font-size: 21px;
-  line-height: 21px;
-  padding: 0;
-}
-
-/*another-features*/
-
-.another-features {
-  background-color: var(--gray);
-  color: var(--black-lighter);
-  font-size: 14px;
-  line-height: 21px;
-}
-.another-features h2 {
-  color: var(--black);
-  font-size: 21px;
-  line-height: 21px;
-  padding: 0;
-}
-.another-features-list {
-  list-style: none;
   margin: 0;
-  padding: 0;
+}
+
+.gray {
+  background-color: var(--gray);
 }
 
 /*search-interested*/
@@ -145,11 +122,12 @@ img {
   font-size: 14px;
   line-height: 24px;
 }
+
 .search-interested h2 {
   color: var(--black);
   font-size: 30px;
   line-height: 24px;
-  padding: 0;
+  margin: 0;
 }
 
 /*search-hotel*/
@@ -160,34 +138,49 @@ img {
   font-size: 14px;
   line-height: 26px;
 }
+
 .search-hotel-title {
   font-size: 21px;
   line-height: 26px;
   background-color: var(--brown-light);
   color: var(--white);
 }
+
 .search-hotel-title:hover {
   background-color: var(--brown);
   color: var(--white);
 }
+
 .search-hotel-title:focus {
   background-color: var(--brown-dark);
   color: var(--white);
 }
-.date_of_arrival,
-.date_of_departure,
+
+.date-arrival,
+.date-departure,
 .number-grownup,
 .number-childrens {
   background-color: var(--light-gray);
+}
+button {
+  padding:0;
+  border:0;
+  background-color: transparent;
+}
+.button {
+  padding:0;
+  border:0;
 }
 .search-button {
   background-color: var(--blue-light);
   color: var(--white);
 }
+
 .search-button:hover {
   background-color: var(--blue);
   color: var(--white);
 }
+
 .search-button:focus {
   background-color: var(--blue-dark);
   color: var(--white);
@@ -201,44 +194,55 @@ img {
   font-size: 21px;
   line-height: 26px;
 }
+
 .footer-contacts a {
   color: var(--black);
 }
+
 .footer-social {
   text-align: center;
 }
+
 .footer-social a {
   color: var(--black);
 }
 
 /*page hotels*/
 
- /*  .filters {
-  вставил из критерия. не знаю как прописать фоновое изображение пока
-  background: var(--blue) url("../img/background-body.jpg") no-repeat center
-}*/
+.filters {
+ background: var(--blue) url("../img/background.jpg") no-repeat center;
+}
 .type-filter {
   color: var(--white);
 }
+
 .button-attribute,
 .button-demonstrate {
   background-color: transparent;
   color: var(--white);
+  border: 0;
+  padding: 0;
 }
+
 .button-demonstrate:hover {
   color: var(--black);
   background-color: var(--white);
+  border: 0;
+  padding: 0;
 }
+
 .sorting {
   background-color: var(--white);
 }
+
 .sorting h2 {
   color: var(--black);
   font-size: 21px;
   line-height: 26px;
-  padding: 0;
+  margin: 0;
 
 }
+
 .sorting-filter {
   list-style: none;
   margin: 0;
@@ -247,80 +251,119 @@ img {
   line-height: 18px;
   color: var(--black);
   background-color: var(--white);
+  font-weight: 400
 }
 .sorting a {
   color: var(--black);
-  font-weight: 700;
 }
-.sorting-filter .button-price {
+.button-sorting {
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  opacity: 30%;
+}
+.active:hover {
   color: var(--blue-light);
+  text-decoration: underline;
+  opacity:100%;
 }
+.press:focus {
+  color: var(--black);
+  text-decoration: none;
+  opacity:100%;
+}
+/*.button-type,
+.button-rating {
+  color: var(--black);
+  font-weight: 400;
+}*/
+/*.sorting-filter .button-price {
+  color: var(--blue-light);
+  border: 0;
+  padding: 0;
+}
+
 .sorting-filter .button-type {
   text-decoration: underline;
   color: var(--black);
   opacity: 30%
 }
+
 .sorting-filter .button-type:hover {
   text-decoration: underline;
   color: var(--blue-light);
 }
+
 .sorting-filter .button-type:focus {
   color: var(--black);
   text-decoration: none;
 }
+
 .sorting-filter .button-rating {
   text-decoration: underline;
   color: var(--black);
   opacity: 30%
 }
+
 .sorting-filter .button-rating:hover {
   text-decoration: underline;
   color: var(--blue-light);
 }
+
 .sorting-filter .button-rating:focus {
   color: var(--black);
   text-decoration: none;
 }
+*/
 .search-results {
   background-color: var(--white);
 }
+
 .name-hotel {
   color: var(--black);
   font-size: 21px;
   line-height: 26px;
 }
+
 .name-hotel:hover {
   color: var(--blue-light);
   font-size: 21px;
   line-height: 26px;
 }
+
 .name-hotel:focus {
   color: var(--black);
   font-size: 21px;
   line-height: 26px;
 }
+
 .button-detail {
   background-color: var(--blue-light);
   color: var(--white);
 }
+
 .button-detail:hover {
   background-color: var(--blue);
   color: var(--white);
 }
+
 .button-detail:focus {
   background-color: var(--blue-dark);
   color: var(--white);
 }
+
 .button-book {
   font-size: 14px;
   line-height: 21px;
   background-color: var(--brown-light);
   color: var(--white);
 }
+
 .button-book:hover {
   background-color: var(--brown);
   color: var(--white);
 }
+
 .button-book:focus {
   background-color: var(--brown-dark);
   color: var(--white);
