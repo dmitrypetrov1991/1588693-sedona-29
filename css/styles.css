@@ -214,35 +214,41 @@ button {
 }
 .type-filter {
   color: var(--white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
 }
-
-.button-attribute,
-.button-demonstrate {
+.button-attribute {
+  display: none;
+}
+input[type='checkbox'] + label::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+  background: transparent;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: var(--white);
+}
+input[type='checkbox']:checked + label::before {
+   border-color: var(--white);
   background-color: transparent;
-  color: var(--white);
-  border: 0;
-  padding: 0;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-.button-demonstrate:hover {
-  color: var(--black);
-  background-color: var(--white);
-  border: 0;
-  padding: 0;
-}
 
 .sorting {
   background-color: var(--white);
 }
-
 .sorting h2 {
   color: var(--black);
   font-size: 21px;
   line-height: 26px;
   margin: 0;
-
 }
-
 .sorting-filter {
   list-style: none;
   margin: 0;
@@ -255,6 +261,9 @@ button {
 }
 .sorting a {
   color: var(--black);
+}
+.button-sorting-blue:nth-child(1) {
+  color: var(--blue-light);
 }
 .button-sorting {
   border: 0;
@@ -272,49 +281,7 @@ button {
   text-decoration: none;
   opacity:100%;
 }
-/*.button-type,
-.button-rating {
-  color: var(--black);
-  font-weight: 400;
-}*/
-/*.sorting-filter .button-price {
-  color: var(--blue-light);
-  border: 0;
-  padding: 0;
-}
 
-.sorting-filter .button-type {
-  text-decoration: underline;
-  color: var(--black);
-  opacity: 30%
-}
-
-.sorting-filter .button-type:hover {
-  text-decoration: underline;
-  color: var(--blue-light);
-}
-
-.sorting-filter .button-type:focus {
-  color: var(--black);
-  text-decoration: none;
-}
-
-.sorting-filter .button-rating {
-  text-decoration: underline;
-  color: var(--black);
-  opacity: 30%
-}
-
-.sorting-filter .button-rating:hover {
-  text-decoration: underline;
-  color: var(--blue-light);
-}
-
-.sorting-filter .button-rating:focus {
-  color: var(--black);
-  text-decoration: none;
-}
-*/
 .search-results {
   background-color: var(--white);
 }
@@ -335,6 +302,7 @@ button {
   color: var(--black);
   font-size: 21px;
   line-height: 26px;
+  opacity: 30%;
 }
 
 .button-detail {
