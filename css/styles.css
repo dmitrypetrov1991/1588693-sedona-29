@@ -39,6 +39,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.page {
+  height: 100%;
+}
 
 /*utility classes*/
 
@@ -93,6 +96,7 @@ button {
 /* Main navigation */
 
 .main-navigation {
+
   color: var(--black);
   background-color: var(--white);
 }
@@ -263,7 +267,7 @@ input[type='checkbox'] + label::before {
 }
 
 input[type='checkbox']:checked + label::before {
-   border-color: var(--white);
+  border-color: var(--white);
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
@@ -361,4 +365,82 @@ input[type='checkbox']:checked + label::before {
 .button-book:focus {
   background-color: var(--brown-dark);
   color: var(--white);
+}
+
+/*Grids*/
+.page-body {
+  width: 1200px;
+  padding: 0 40px;
+}
+.main-header {
+  position: relative;
+}
+.main-navigation {
+  display: grid;
+  grid-template-columns: 530px auto 530px;
+  height: 56px;
+
+}
+.left {
+  grid-column: 1/2;
+  padding-left: 70px;
+
+}
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.right {
+  grid-column: 3/4;
+  padding-right: 70px;
+  text-align: right;
+
+}
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.mark {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 256px;
+  text-align: center;
+}
+.image-city {
+  grid-column: 2/4;
+}
+.text-first {
+  grid-column: 1/2;
+}
+.sector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 330px;
+  text-align: center;
+}
+.image-nature {
+  grid-column: 1/3;
+}
+.text-second {
+  grid-column: 3/4;
+}
+.main-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 120px;
+}
+.footer-contacts {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.footer-social {
+  grid-column: 2/3;
+  grid-template-columns: repeat(3, 1fr);
+}
+.website-button {
+  grid-column: 3/4;
 }
