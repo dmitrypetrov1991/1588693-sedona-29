@@ -131,9 +131,12 @@ button {
   background-color: var(--blue-light);
   color: var(--white);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 400px 800px;
   height: 256px;
   text-align: center;
+}
+.revers {
+  grid-template-columns: 800px 400px;
 }
 
 .big-feature h2 {
@@ -256,11 +259,6 @@ button {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  display: grid;
-  grid-template-rows:
-  1fr 1fr 1fr;
-  width: 150px;
-  border: none;
 }
 .capital {
   color: var(--white);
@@ -391,11 +389,7 @@ input[type='checkbox']:checked + label::before {
 /*Grids*/
 .page-body {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 40px 1200px 40px;
-}
-.page-width {
-  grid-column: 2/3;
+  width: 1200px
 }
 .main-header {
   position: relative;
@@ -406,7 +400,7 @@ input[type='checkbox']:checked + label::before {
   height: 56px;
 
 }
-.left {
+.site-navigation.left {
   grid-column: 1/2;
   padding-left: 70px;
 
@@ -425,25 +419,19 @@ input[type='checkbox']:checked + label::before {
 }
 .site-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: repeat(2,1fr);
 }
 .image-city {
-  grid-column: 2/4;
+  grid-column: 2/3;
 }
 .text-first {
   grid-column: 1/2;
 }
-.sector {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 330px;
-  text-align: center;
-}
 .image-nature {
-  grid-column: 1/3;
+  grid-column: 1/2;
 }
 .text-second {
-  grid-column: 3/4;
+  grid-column: 2/3;
 }
 .main-footer {
   display: grid;
@@ -453,17 +441,4 @@ input[type='checkbox']:checked + label::before {
 
 /*Grids Hotels*/
 
-.filters {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 217px;
-}
-.one-third {
-  grid-column: 1/2;
-}
-.two-third {
-  grid-column: 2/3;
-}
-.third {
-  grid-column: 3/4;
-}
+
