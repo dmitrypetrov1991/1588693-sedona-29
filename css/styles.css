@@ -249,6 +249,8 @@ button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -265,6 +267,10 @@ button {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+}
+.main-footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -421,24 +427,34 @@ input[type='checkbox']:checked + label::before {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-.image-city {
+.image-city.text-second {
   grid-column: 2/3;
 }
-.text-first {
+.text-first.image-nature {
   grid-column: 1/2;
 }
-.image-nature {
-  grid-column: 1/2;
-}
-.text-second {
-  grid-column: 2/3;
-}
-.main-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 120px;
-}
+/*Flex*/
 
-/*Grids Hotels*/
-
-
+.column-left,
+.column-right{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sorting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sorting-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

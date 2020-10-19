@@ -38,6 +38,7 @@
   <section class="filters">
     <form action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="type-filter">
+        <div class="column-left">
         <legend class="capital">инфраструктура:</legend>
         <input class="button button-attribute" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
         <label for="swimming-pool">Бассейн</label>
@@ -45,8 +46,10 @@
         <label for="parking">Парковка</label>
         <input class="button button-attribute" type="checkbox" name="wi-fi" id="wi-fi">
         <label for="wi-fi">Wi-Fi</label>
+        </div>
       </fieldset>
       <fieldset class="type-filter">
+        <div class="column-right">
         <legend class="capital">тип жилья:</legend>
         <input class="button button-attribute" type="checkbox" name="hotel" id="hotel" checked>
         <label for="hotel">Гостиница</label>
@@ -54,6 +57,7 @@
         <label for="motel">Мотель</label>
         <input class="button button-attribute" type="checkbox" name="apartments" id="apartments" checked>
         <label for="apartments">Апартаменты</label>
+        </div>
       </fieldset>
       <label for="cost-per-day">Стоимость в сутки (Р):</label>
       от 0 <input class="cost-day" type="range" id="cost-per-day" name="cost-per-day" min="0" max="3000" step="1000"> до 3000
@@ -61,13 +65,13 @@
     </form>
   </section>
   <div class="sorting">
-    <h2>Сортировка:</h2>
+    <h2>Найдено: 3</h2>
+    <p>Сортировка:</p>
     <ul class="sorting-filter">
       <li><a class="button-sorting active" href="#">По цене</a></li>
       <li><a class="button-sorting" href="#">По типу</a></li>
       <li><a class="button-sorting" href="#">По рейтингу</a></li>
     </ul>
-    <h2>Найдено: 3</h2>
   </div>
   <article class="search-results">
     <img src="img/layer-1.jpg" width="135" height="90" alt="Гостиница">
