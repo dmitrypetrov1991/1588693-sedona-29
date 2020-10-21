@@ -35,8 +35,9 @@
     </nav>
   </header>
 <main class="hotels-container">
-  <section class="filters">
+  <section>
     <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="filters">
       <fieldset class="type-filter">
         <div class="column-left">
         <legend class="capital">инфраструктура:</legend>
@@ -59,9 +60,12 @@
         <label for="apartments">Апартаменты</label>
         </div>
       </fieldset>
+        <div class="price">
       <label for="cost-per-day">Стоимость в сутки (Р):</label>
       от 0 <input class="cost-day" type="range" id="cost-per-day" name="cost-per-day" min="0" max="3000" step="1000"> до 3000
       <button class="button button-demonstrate" type="submit">Показать</button>
+        </div>
+      </div>
     </form>
   </section>
   <div class="sorting">
