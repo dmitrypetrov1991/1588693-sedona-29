@@ -35,10 +35,27 @@
     </nav>
   </header>
 <main class="hotels-container">
-  <section>
-    <form action="https://echo.htmlacademy.ru/" method="post">
-      <div class="filters">
-      <fieldset class="type-filter">
+  <section class="filters">
+    <div class="hotels-bar">
+      <div class="filter-bar">
+        <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="type-filter-left">
+            <legend class="capital">инфраструктура:</legend>
+            <div class="type-filter-box">
+            <input class="button attribute" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+            <label class="vc" for="swimming-pool">Бассейн</label>
+            <input class="button attribute" type="checkbox" name="parking" id="parking">
+            <label class="vc" for="parking">Парковка</label>
+            <input class="button attribute" type="checkbox" name="wi-fi" id="wi-fi">
+            <label class="vc" for="wi-fi">Wi-Fi</label>
+            </div>
+          </fieldset>
+          <fieldset class="type-filter-right"></fieldset>
+          <div class="price"></div>
+        </form>
+        <!--
+      <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="type-filter-left">
         <div class="column-left">
         <legend class="capital">инфраструктура:</legend>
         <input class="button button-attribute" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
@@ -49,7 +66,7 @@
         <label for="wi-fi">Wi-Fi</label>
         </div>
       </fieldset>
-      <fieldset class="type-filter">
+      <fieldset class="type-filter-right">
         <div class="column-right">
         <legend class="capital">тип жилья:</legend>
         <input class="button button-attribute" type="checkbox" name="hotel" id="hotel" checked>
@@ -65,9 +82,12 @@
       от 0 <input class="cost-day" type="range" id="cost-per-day" name="cost-per-day" min="0" max="3000" step="1000"> до 3000
       <button class="button button-demonstrate" type="submit">Показать</button>
         </div>
-      </div>
     </form>
+    -->
+      </div>
+      </div>
   </section>
+<!--
   <div class="sorting">
     <div class="sorting-left">
     <h2>Найдено: 3</h2>
@@ -120,6 +140,7 @@
     <a class="button button-detail" href="#">Подробнее</a>
     <a class="button button-book" href="#">Забронировать</a>
   </article>
+  -->
 </main>
 <footer class="main-footer">
   <div class="footer-contacts">
